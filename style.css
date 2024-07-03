@@ -35,7 +35,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 5fr;
 }
 
 
@@ -44,14 +44,66 @@ p, h1, h2, h3, h4, h5, h6 {
 .nav{
     grid-column: 2 / 4;
     background-color: var(--card-n-nav);
+
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px 50px;
+}
+
+.nav > div{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 10px 0;
+    gap: 22px;
+}
+
+.section-one{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-top-inner-box{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 22px;
+}
+
+.box-1{
+    margin-right: auto;
+}
+
+.box-2{
+    margin-left: auto;
 }
 
 input{
     background-color: var(--search-n-main);
+    width: 40rem;
+    border: none;
+    border-radius: 20px;
+    padding: 7px 7px 7px 12px;
 }
 
 button{
     background-color: var(--btn-n-sidebar);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 8px 25px;
+}
+
+.user-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.user-icon-bigger{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
 }
 
 
@@ -69,6 +121,7 @@ button{
 .sidebar-card{
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
     gap: 25px;
     padding: 10px 0;
     color: white;
@@ -101,4 +154,15 @@ button{
 
 .card{
     /* background-color: var(--card-n-nav); */
+}
+
+
+/* svg size and code */
+svg{
+    width: 20px;
+    height: 20px;
+}
+
+.white-svg{
+    fill: white;
 }
